@@ -2,40 +2,21 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Recuerdos por Año</title>
-  <link rel="stylesheet" href="/despedida-prepa/css/style.css">
+  <title>Recuerdos de la Prepa</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <header>
-    <h1>Fotos a recordar</h1>
-    <nav>
-      <ul>
-        <li onclick="mostrarSeccion('primero')">1° Año</li>
-        <li onclick="mostrarSeccion('segundo')">2° Año</li>
-        <li onclick="mostrarSeccion('tercero')">3° Año</li>
-      </ul>
-    </nav>
+    <h1>🎓 Recuerdos de la Prepa 🎓</h1>
+    <p>Revive los mejores momentos de cada año. 💛✨</p>
   </header>
 
-  <section id="primero" class="seccion">
-    <h2>✨ Primer Año</h2>
-    <img src="/despedida-prepa/img/primero1.jpg" alt="Foto primer año">
-      </section>
+  <main class="menu-anios">
+    <a href="./primero/index.html" class="boton">1° Año</a>
+    <a href="./segundo/index.html" class="boton">2° Año</a>
+    <a href="./tercero/index.html" class="boton">3° Año</a>
+  </main>
 
-  <section id="segundo" class="seccion oculto">
-    <h2>🌟 Segundo Año</h2>
-    <img src="/despedida-prepa/img/segundo1.jpg" alt="Foto segundo año">
-  </section>
-
-  <section id="tercero" class="seccion oculto">
-    <h2>💫 Tercer Año</h2>
-    <img src="/despedida-prepa/img/tercero1.jpg" alt="Foto tercer año">
-      </section>
-
-  <!-- Modal -->
-  <div id="modal" class="modal" onclick="cerrarModal()">
-    <img id="modal-img" src="" alt="Imagen ampliada">
-  </div>
- <script src="./js/script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
