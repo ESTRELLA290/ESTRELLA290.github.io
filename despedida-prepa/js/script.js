@@ -7,7 +7,7 @@ function mostrarSeccion(id) {
 }
 
 window.onload = function () {
-  mostrarSeccion('galeria');
+  mostrarSeccion('primero');
 
   const imagenes = document.querySelectorAll('.seccion img');
   imagenes.forEach(img => {

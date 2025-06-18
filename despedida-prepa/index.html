@@ -2,40 +2,46 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Despedida Prepa</title>
+  <title>Recuerdos por Año</title>
   <link rel="stylesheet" href="/despedida-prepa/css/style.css">
 </head>
 <body>
   <header>
-    <h1>💛 Momentos Inolvidables 💛</h1>
+    <h1>🎓 Recuerdos por Año 🎓</h1>
     <nav>
       <ul>
-        <li onclick="mostrarSeccion('galeria')">Fotos</li>
-        <li onclick="mostrarSeccion('video')">Video</li>
-        <li onclick="mostrarSeccion('agradecimientos')">Agradecimientos</li>
+        <li onclick="mostrarSeccion('primero')">1° Año</li>
+        <li onclick="mostrarSeccion('segundo')">2° Año</li>
+        <li onclick="mostrarSeccion('tercero')">3° Año</li>
       </ul>
     </nav>
   </header>
 
-  <section id="galeria" class="seccion">
-    <h2>📸 Galería de fotos</h2>
-    <img src="/despedida-prepa/img/galeria1.jpg" alt="Foto 1">
-    <img src="/despedida-prepa/img/galeria2.jpg" alt="Foto 2">
-  </section>
-
-  <section id="video" class="seccion oculto">
-    <h2>🎥 Video de despedida</h2>
+  <section id="primero" class="seccion">
+    <h2>✨ Primer Año</h2>
+    <img src="/despedida-prepa/img/primero1.jpg" alt="Foto primer año">
     <video controls>
-      <source src="/despedida-prepa/videos/video_despedida.mp4" type="video/mp4">
+      <source src="/despedida-prepa/videos/primero1.mp4" type="video/mp4">
     </video>
   </section>
 
-  <section id="agradecimientos" class="seccion oculto">
-    <h2>🙏 Gracias por todo</h2>
-    <p>Gracias por formar parte de este capítulo tan importante. ¡Nos vemos pronto!</p>
+  <section id="segundo" class="seccion oculto">
+    <h2>🌟 Segundo Año</h2>
+    <img src="/despedida-prepa/img/segundo1.jpg" alt="Foto segundo año">
+    <video controls>
+      <source src="/despedida-prepa/videos/segundo1.mp4" type="video/mp4">
+    </video>
   </section>
 
-  <!-- Modal para imágenes -->
+  <section id="tercero" class="seccion oculto">
+    <h2>💫 Tercer Año</h2>
+    <img src="/despedida-prepa/img/tercero1.jpg" alt="Foto tercer año">
+    <video controls>
+      <source src="/despedida-prepa/videos/tercero1.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <!-- Modal -->
   <div id="modal" class="modal" onclick="cerrarModal()">
     <img id="modal-img" src="" alt="Imagen ampliada">
   </div>
