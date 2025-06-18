@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Despedida Prepa</title>
+  <link rel="stylesheet" href="/despedida-prepa/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>💛 Momentos Inolvidables 💛</h1>
+    <nav>
+      <ul>
+        <li onclick="mostrarSeccion('galeria')">Fotos</li>
+        <li onclick="mostrarSeccion('video')">Video</li>
+        <li onclick="mostrarSeccion('agradecimientos')">Agradecimientos</li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="galeria" class="seccion">
+    <h2>📸 Galería de fotos</h2>
+    <img src="/despedida-prepa/img/galeria1.jpg" alt="Foto 1">
+    <img src="/despedida-prepa/img/galeria2.jpg" alt="Foto 2">
+  </section>
+
+  <section id="video" class="seccion oculto">
+    <h2>🎥 Video de despedida</h2>
+    <video controls>
+      <source src="/despedida-prepa/videos/video_despedida.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <section id="agradecimientos" class="seccion oculto">
+    <h2>🙏 Gracias por todo</h2>
+    <p>Gracias por formar parte de este capítulo tan importante. ¡Nos vemos pronto!</p>
+  </section>
+
+  <!-- Modal para imágenes -->
+  <div id="modal" class="modal" onclick="cerrarModal()">
+    <img id="modal-img" src="" alt="Imagen ampliada">
+  </div>
+
+  <script src="/despedida-prepa/js/script.js"></script>
+</body>
+</html>
