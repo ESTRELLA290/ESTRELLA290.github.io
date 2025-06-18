@@ -1,14 +1,18 @@
 function mostrarSeccion(id) {
+  // Oculta todas las secciones
   const secciones = document.querySelectorAll('.seccion');
   secciones.forEach(sec => sec.classList.add('oculto'));
 
+  // Muestra la sección seleccionada
   const activa = document.getElementById(id);
   if (activa) activa.classList.remove('oculto');
 }
 
+// Asegurar que el script se ejecuta solo cuando la página ha cargado
 window.onload = function () {
-  mostrarSeccion('primero');
+  mostrarSeccion('primero'); // Mostrar por defecto el primer año
 
+  // Activar el modal en las imágenes
   const imagenes = document.querySelectorAll('.seccion img');
   imagenes.forEach(img => {
     img.addEventListener('click', function () {
