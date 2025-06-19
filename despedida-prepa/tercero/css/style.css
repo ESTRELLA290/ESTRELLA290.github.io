@@ -16,15 +16,14 @@ header {
 }
 .galeria img,
 .galeria video {
-  width: 200px;         /* Tamaño fijo para hacerlo más pequeño y en forma de rectángulo */
-  height: 140px;        /* Puedes ajustar según la proporción que desees */
-  margin: 15px;         /* Espacio entre cada imagen/video */
+  width: 200px;          /* Ancho fijo */
+  height: 140px;         /* Alto fijo */
+  object-fit: cover;     /* Recorta la imagen para llenar el espacio sin deformarla */
+  margin: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: transform 0.3s;
-  object-fit: cover;    /* Para asegurar que la imagen se recorte manteniendo proporción visual */
 }
-
 .galeria img:hover, .galeria video:hover {
   transform: scale(1.05);
 }
