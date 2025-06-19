@@ -23,5 +23,32 @@
   </section>
 
   <script src="./js/script.js"></script>
+<script>
+  const imagenes = document.querySelectorAll('.galeria img');
+  let indice = 0;
+
+  function mostrarImagen(index) {
+    // Verifica que hay imágenes cargadas
+    if (imagenes.length === 0) return;
+
+    // Oculta todas
+    imagenes.forEach((img, i) => {
+      img.style.display = 'none';
+    });
+
+    // Muestra la imagen actual
+    imagenes[index].style.display = 'block';
+  }
+
+  function cambiarImagen(direccion) {
+    indice = (indice + direccion + imagenes.length) % imagenes.length;
+    mostrarImagen(indice);
+  }
+
+  // Mostrar la primera imagen al cargar la página
+  document.addEventListener('DOMContentLoaded', () => {
+    mostrarImagen(indice);
+  });
+</script>
 </body>
 </html>
