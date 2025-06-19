@@ -14,13 +14,15 @@ header {
 .galeria {
   margin: 25px auto;
 }
-
-.galeria img, .galeria video {
-  max-width: 90%;
-  margin: 20px 0;
+.galeria img,
+.galeria video {
+  width: 200px;         /* Tamaño fijo para hacerlo más pequeño y en forma de rectángulo */
+  height: 140px;        /* Puedes ajustar según la proporción que desees */
+  margin: 15px;         /* Espacio entre cada imagen/video */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: 0.3s;
+  transition: transform 0.3s;
+  object-fit: cover;    /* Para asegurar que la imagen se recorte manteniendo proporción visual */
 }
 
 .galeria img:hover, .galeria video:hover {
