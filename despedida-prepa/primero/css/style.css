@@ -1,4 +1,3 @@
-/* Estilos generales del cuerpo */
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(45deg, #fff8e1, #ffcc80);
@@ -6,30 +5,24 @@ body {
   text-align: center;
 }
 
-/* Encabezado principal */
 header {
   background-color: #ffeb3b;
   padding: 20px;
   font-size: 24px;
 }
 
-/* Contenedor de la galería */
 .galeria {
-  margin: 40px auto;
+  margin: 25px auto;
 }
-
-/* Imágenes y videos dentro de la galería */
 .galeria img,
 .galeria video {
-  max-width: 90%;
-  margin: 20px 0;
+  width: 350px;          /* Ancho fijo */
+  height: 250px;         /* Alto fijo */
+  margin: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: 0.3s;
+  transition: transform 0.3s;
 }
-
-/* Efecto hover para imágenes y videos */
-.galeria img:hover,
-.galeria video:hover {
+.galeria img:hover, .galeria video:hover {
   transform: scale(1.05);
 }

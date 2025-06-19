@@ -12,17 +12,17 @@ header {
 }
 
 .galeria {
-  margin: 40px auto;
+  margin: 25px auto;
 }
-
-.galeria img, .galeria video {
-  max-width: 90%;
-  margin: 20px 0;
+.galeria img,
+.galeria video {
+  width: 350px;          /* Ancho fijo */
+  height: 250px;         /* Alto fijo */
+  margin: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: 0.3s;
+  transition: transform 0.3s;
 }
-
 .galeria img:hover, .galeria video:hover {
   transform: scale(1.05);
 }

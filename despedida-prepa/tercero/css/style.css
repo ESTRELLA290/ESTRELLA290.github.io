@@ -16,8 +16,8 @@ header {
 }
 .galeria img,
 .galeria video {
-  width: 400px;          /* Ancho fijo */
-  height: 300px;         /* Alto fijo */
+  width: 350px;          /* Ancho fijo */
+  height: 250px;         /* Alto fijo */
   margin: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
