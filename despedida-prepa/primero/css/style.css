@@ -37,8 +37,29 @@ header {
   height: 100%;
   overflow: auto;
   background-color: rgba(0,0,0,0.8);
+  transition: opacity 0.3s ease;
 }
 
 .modal-content {
   margin: auto;
-  display
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+  box-shadow: 0 0 10px #fff;
+  animation: zoom 0.3s ease;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.7);}
+  to {transform: scale(1);}
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 45px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
